@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -103,7 +103,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -117,97 +117,83 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Kotov Semyon} \\[7.5pt]
-\href{https://github.com/andude10}{\raisebox{-0.05\height}\faGithub\ andude} \ $|$ \ 
-\href{http://kotof.me/}{\raisebox{-0.05\height}\faGlobe \ kotof.me} \ $|$ \ 
-\href{mailto:formalkotov@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ formalkotov@gmail.com} \ $|$ \ 
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-High school student from Russia, self-taught programmer. English language level C1 (certified IELTS test passed) Purposeful, open to criticism and good teamwork. I know C\# well, for small scripts I use Python and sometimes JavaScript. 
-
-%Experience
-\section{Work Experience}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-	\textbf{Freelance development of 'LibroInspection'} | \emph{Charts, WPF, C\#, Reactive programming} & \hfill \href{http://kotof.me/portfolio/Librotech-Inspection/}{Details} \\[3.75pt]
-	\multicolumn{2}{@{}X@{}}{
-		\begin{minipage}[t]{\linewidth}
-			\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-				\item[--] Application for data analysis of the data (temperature, humidity, etc.) collected by the Librotech company data logger.
-				\item[--] Worked with the customer - understood what features are required, how should interface look like.
-				\item[--] Improved application performance, searched for weaknesses in the application using dotTrace profiler, implemented the Ramer–Douglas–Peucker algorithm to speed up chart rendering time.
-				\item[--] Working with .csv file - parsing data.
-				\item[--] Wrote tests for all services.
-			\end{itemize}
-		\end{minipage}
-	}  \\
-\end{tabularx}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-	\textbf{Freelance development of 'SecurePass'
-	} | \emph{WPF, C\#, SQLite, Encryption} & \hfill \href{http://kotof.me/portfolio/SecurePass/}{Details} \\[3.75pt]
-	\multicolumn{2}{@{}X@{}}{
-		\begin{minipage}[t]{\linewidth}
-			\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-				\item[--] Password manager desktop app, analogue of LastPass.
-				\item[--] Implemented an authorization system.
-				\item[--] Developed SQLite database encryption
-			\end{itemize}
-		\end{minipage}
-	}  \\
-\end{tabularx}
-
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-	Programming languages &  \normalsize{C\#, Python, SQL, JavaScript}\\
-	Technologies  &  \normalsize{ASP.NET Core, WPF, Web-API, .NET Core, Razor Pages}\\
-	Tools  &  \normalsize{Git, Docker, Visual Studio, Rider, Linux Console}\\
-	Other  &  \normalsize{Testing, OOP/SOLID, HTML/CSS}\\
-\end{tabularx}
-
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Avayandex Music} | \emph{Desktop Application, Yandex API, C\#} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source code} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-	\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-		\item[--] Unofficial Yandex.Music (streaming service) client for Windows, Linux and MacOS.
-		\item[--] Developed a Yandex.Music account authorization system, saving account data in encrypted form.
-		\item[--] Interaction with API of Yandex.Music.
-		\item[--] Developed a responsive (thanks to asynchronous API requests) interface.
-		\item[--] Implemented VLC player for playing media
-	\end{itemize}
-\end{minipage}
-}  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-	\textbf{The Tome} | \emph{ASP.NET Core, SQL Server, C\#, HTML/CSS} & \hfill \href{https://github.com/andude10/The-Tome}{Source code} \\[3.75pt]
-	\multicolumn{2}{@{}X@{}}{
-		\begin{minipage}[t]{\linewidth}
-			\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-				\item[--] Social network and bookstore.
-				\item[--] Wrote integration tests.
-				\item[--] Implemented an authorization system.
-			\end{itemize}
-		\end{minipage}
-	}  \\
+\href{https://github.com/andude10}{\raisebox{-0.05\height}\faGithub\ github} \ $|$ \
+\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ andude10.github.io } \ $|$ \
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ formalkotov@gmail.com } \ $|$ \
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +36 20 535 0225} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2020 - present & International School of Tomorrow \hfill \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2023 - present & BSc Computer Science at \textbf{Eötvös Loránd University} \hfill \normalsize (GPA: 4.0/4.0) \\
+
 \end{tabularx}
 
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming &  \normalsize{C\# (.NET), Python, JavaScript, HTML/CSS  }\\
+Technologies &  \normalsize{ASP.NET Core, Web API, Minimal API, Razor Pages, WPF, AvaloniaUI  }\\
+Tools &  \normalsize{Git, Docker, GitHub, Visual Studio, Rider, VS Code, .NET CLI, dotTrace  }\\
+Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity Framework, Linux}\\
+\end{tabularx}
+
+
+% ----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+% ----------------------------------------------------------------------------------------
+
+% %Experience
+% \section{Work Experience}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%         \item[--] long long line of blah blah that will wrap when the table fills the column width
+%         \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+%     \end{itemize}
+%     \end{minipage}
+% }
+% \end{tabularx}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{2023 Librotech Inspection} | \emph{C\# (.NET), Desktop, Charts, Asynchronous programming} & \hfill \href{https://andude10.github.io/projects/}{Blog post} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developed cross-platform desktop application to analyze records collected by a company's data logger
+        \item [--] Designed a minimalistic design as per the user's request. Used asynchronous programming (async/await) and reactive programming implemented by ReactiveUI library, to make the interface responsive and smooth, improving the UX.
+        \item[--] Faced poor graph performance with large amounts of data. Implemented Douglas-Peucker algorithm, which reduces the number of points on the graph by 360\% without changing the graph view, resulting in a significant performance boost.
+        \item[--] To reduce RAM usage, I created a system to cache application pages. When a user navigates to another page, the previous page is serialized into a .json file, which will be deserialized back when needed.
+        \item[--] I paid attention to code cleanliness and readability, wrote comments where necessary, and followed OOP. I used MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Wrote tests using xUnit.
+        \item[--] Found the causes of poor application performance thanks to dotTrace
+    \end{itemize}
+    \end{minipage}
+}  \\
+\end{tabularx}
+
+%Projects
+\section{Languages}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+English  &  \normalsize{C1 (Obtained IELTS Academic Certificate)}\\
+Russian  &  \normalsize{Native}\\
+\end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
