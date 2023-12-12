@@ -128,7 +128,8 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-2023 - present & BSc Computer Science at \textbf{Eötvös Loránd University} \hfill \normalsize \\
+\textbf{Eötvös Loránd University (ELTE)} & \hfill \normalsize Budapest, Hungray \\
+BSc in Computer Science  & \hfill \normalsize \normalsize Sep. 2023 - Present \\
 
 \end{tabularx}
 
@@ -137,10 +138,10 @@
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming &  \normalsize{C\# (.NET), Python, JavaScript, HTML/CSS  }\\
+Programming &  \normalsize{C\# (.NET), Python, JavaScript, HTML/CSS,  }\\
 Technologies &  \normalsize{ASP.NET Core, Web API, Minimal API, Razor Pages, WPF, AvaloniaUI  }\\
 Tools &  \normalsize{Git, Docker, GitHub, Visual Studio, Rider, VS Code, .NET CLI, dotTrace  }\\
-Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity Framework, Linux}\\
+Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity Framework Core, Linux}\\
 \end{tabularx}
 
 
@@ -172,16 +173,38 @@ Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{2023 Librotech Inspection} | \emph{C\# (.NET), Desktop, Charts, Asynchronous programming} & \hfill \href{https://andude10.github.io/projects/}{Blog post} \\[3.75pt]
+\textbf{Librotech Inspection (2023)} | \emph{C\# (.NET), Desktop, Charts, Asynchronous programming} & \hfill \href{https://andude10.github.io/projects/Librotech Inspection}{Blog post} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developed cross-platform desktop application to analyze records collected by a company's data logger
-        \item [--] Designed a minimalistic design as per the user's request. Used asynchronous programming (async/await) and reactive programming implemented by ReactiveUI library, to make the interface responsive and smooth, improving the UX.
-        \item[--] Faced poor graph performance with large amounts of data. Implemented Douglas-Peucker algorithm, which reduces the number of points on the graph by 360\% without changing the graph view, resulting in a significant performance boost.
+        \item[--] Developed a cross-platform desktop application to analyze records collected by a company's data logger
+        \item [--] Designed a minimalistic design as per the user's request. Used asynchronous programming (async/await) and reactive programming implemented by the ReactiveUI library, to make the interface responsive and smooth, improving the UX.
+        \item[--] Faced poor graph performance with large amounts of data. Implemented the Douglas-Peucker algorithm, which reduced the number of points on the graph by 360\% without changing the graph view, resulting in a significant performance boost.
         \item[--] To reduce RAM usage, I created a system to cache application pages. When a user navigates to another page, the previous page is serialized into a .json file, which will be deserialized back when needed.
-        \item[--] I paid attention to code cleanliness and readability, wrote comments where necessary, and followed OOP. I used MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Wrote tests using xUnit.
-        \item[--] Found the causes of poor application performance thanks to dotTrace, .NET Performance Profiler.
+        \item[--] To keep code clean and readable, I followed OOP, C\# code conventions and wrote comments where necessary. Utilized MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Wrote tests using xUnit.
+        \item[--] Found the reasons of poor application performance by using dotTrace, .NET Performance Profiler.
+    \end{itemize}
+    \end{minipage}
+}  \\
+\\
+\textbf{MusicService Desktop (2022)} | \emph{C\# (.NET), API} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developed a cross-platform community desktop client for popular online music service.
+        \item [--] Faced poor UX when API requests happened in a single thread, introduced task parallel library (TPL) for API requests. Implemented side-loading for tracks.
+        \item [--] Contributed to community-made C\# API library.
+    \end{itemize}
+    \end{minipage}
+}  \\
+\\
+\textbf{SecurePass (2021)} | \emph{C\# (.NET), SQLite, Entity Framework} & \hfill \href{https://andude10.github.io/projects/SecurePass/}{Blog post} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developed a full-functional password manager on freelance.
+        \item [--] Introduced Repository pattern combined with ORM (Entity Framework) for accessing SQLite database.
+        \item [--] Implemented responsive interface from client's mockup.
     \end{itemize}
     \end{minipage}
 }  \\
@@ -192,7 +215,6 @@ Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 English  &  \normalsize{C1 (Obtained IELTS Academic Certificate)}\\
-Russian  &  \normalsize{Native}\\
 \end{tabularx}
 
 \vfill
