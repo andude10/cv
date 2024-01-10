@@ -140,9 +140,8 @@ BSc in Computer Science  & \hfill \normalsize \normalsize 2023 - 2026 \\
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 Languages &  \normalsize{C\# (.NET), Python, C  }\\
-Technologies &  \normalsize{HTML/CSS, ASP.NET Core, Web API, Razor Pages, WPF  }\\
-Tools &  \normalsize{Git, Docker, GitHub, Visual Studio, Rider, VS Code, .NET CLI, dotTrace  }\\
-Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity Framework Core, Linux}\\
+Technologies &  \normalsize{HTML/CSS, ASP.NET Core, SQL Server, Git, SQLite, SQL, Docker, WPF, EF Core  }\\
+Other &  \normalsize{ OOP, FP, REST API, Testing, Design patterns }\\
 \end{tabularx}
 
 
@@ -174,48 +173,42 @@ Other &  \normalsize{ SQL Server, SQLite, SQL, xUnit, Testing, OOP/SOLID, Entity
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Librotech Inspection (2023)} | \emph{C\# (.NET), Desktop, Charts} & \hfill \href{https://andude10.github.io/projects/Librotech Inspection}{Blog post} \\[3.75pt]
+\textbf{ Analysis tool for the data logger (2023)} | \emph{C\#} & \hfill \href{https://andude10.github.io/projects/Librotech Inspection}{Blog post} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developed an offline cross-platform solution to analyze records collected by the company's data logger.
+        \item[--] Offline cross-platform solution to analyze records collected by the company's data logger.
         \item[--] Faced poor graph performance with large amounts of data. Implemented the Douglas-Peucker algorithm, which reduced the number of points on the graph by 360\% without changing the graph view, resulting in a significant performance boost.
-        \item[--] To reduce RAM usage, I developed a caching system for the pages. When a user navigates to another page, the previous page is serialized into a .json file, which will be deserialized back when needed.
-        \item[--] To keep code clean and readable, I followed OOP, C\# code conventions and wrote comments where necessary. Utilized MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Wrote tests using xUnit.
-        \item[--] Found the causes of poor application performance using dotTrace, .NET Performance Profiler.
-        \item [--] Developed a minimalistic UI as per the user's request. Used asynchronous programming and the ReactiveUI library to make the interface responsive and smooth, improving the UX.
+        \item[--] Developed page caching system to reduce RAM usage. When the user navigates to another page, the previous page is saved in a .json file that will be created back if needed.
+        \item[--] To keep code clean and readable, I followed OOP, C\# code conventions and maintained documentation. Utilized MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Introduced unit testing.
+        \item[--] Found the causes of poor application performance using dotTrace, performance profiler.
+        \item [--] Developed a minimalistic UI as per the user's request. Used asynchronous programming and the ReactiveUI library to make the interface responsive and smooth.
     \end{itemize}
     \end{minipage}
 }  \\
 \\
-\textbf{Client for music service (2022)} | \emph{C\# (.NET), API, Async programming} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source code} \\[3.75pt]
+\textbf{Client for music service (2022)} | \emph{C\#, API, TPL} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source code} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developed a cross-platform community desktop client for popular online music service.
-        \item [--] Faced poor UX when API requests happened in a single thread, introduced task parallel library (TPL) for API requests. Implemented side-loading for tracks and images.
-        \item [--] Contributed to community-made C\# API library.
+        \item[--] Cross-platform community client for popular online music service.
+        \item[--] Implemented authorization, downloading/playing tracks, track queue, home page, user data and more.
+        \item [--] Faced poor user experience due to slow app performance. It was because of large number of API requests in single thread. Introduced task parallel library (TPL), making interface much more responsive.
+        \item [--] Contributed to open-source C\# API library.
     \end{itemize}
     \end{minipage}
 }  \\
 \\
-\textbf{Online bookstore (2022)} | \emph{C\#, ASP.NET Core, SQL Server, Entity Framework} & \hfill \href{https://github.com/andude10/The-Tome/}{Source code} \\[3.75pt]
+\textbf{Online bookstore (2021)} | \emph{C\#, ASP.NET Core, SQL Server, Entity Framework} & \hfill \href{https://github.com/andude10/The-Tome/}{Source code} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
         \item [--] Web application for a fictional bookstore with basic (CRUD) functionality.
+        \item [--] Stored data in SQL Server, made database queries using ORM (Entity Framework).
     \end{itemize}
     \end{minipage}
 }  \\
 \\
-\textbf{Password manager (2021)} | \emph{C\#, SQLite, Entity Framework} & \hfill \href{https://andude10.github.io/projects/SecurePass/}{Blog post} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item [--] Introduced Repository pattern combined with ORM (Entity Framework) for accessing SQLite database.
-    \end{itemize}
-    \end{minipage}
-}  \\
 \end{tabularx}
 
 %Projects
