@@ -117,11 +117,10 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Kotov Semyon} \\[7.5pt]
-\href{https://github.com/andude10}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \
-\href{https://www.linkedin.com/in/semyon-kotof-aa6045251/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \
-\href{https://andude10.github.io/}{\raisebox{-0.05\height}\faGlobe \ Personal website } \ $|$ \
-\href{mailto:formalkotov@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ formalkotov@gmail.com } \ $|$ \
-\href{tel:+36205350225}{\raisebox{-0.05\height}\faMobile \ +36 20 535 0225} \\
+\href{https://github.com/andude10}{\raisebox{-0.05\height}\faGithub\ github.com/andude10} \ $|$ \
+\href{https://www.linkedin.com/in/semyon-kotof-aa6045251/}{\raisebox{-0.05\height}\faLinkedin\ linkedin.com/semyon} \ $|$ \
+\href{https://andude10.github.io/}{\raisebox{-0.05\height}\faGlobe \ blog } \ $|$ \
+\href{mailto:formalkotov@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ formalkotov@gmail.com } \  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -129,8 +128,8 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Eötvös Loránd University (ELTE)} & \hfill \normalsize Budapest, Hungray \\
-BSc in Computer Science  & \hfill \normalsize \normalsize 2023 - 2026 \\
+\textbf{Eötvös Loránd University (ELTE)} & \hfill \normalsize Budapest, Hungary \\
+BSc in Computer Science  & \hfill \normalsize \normalsize 2023 – 2026  \\
 
 \end{tabularx}
 
@@ -139,9 +138,9 @@ BSc in Computer Science  & \hfill \normalsize \normalsize 2023 - 2026 \\
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Languages &  \normalsize{C\# (.NET), Python, C  }\\
-Technologies &  \normalsize{HTML/CSS, ASP.NET Core, SQL Server, Git, SQLite, SQL, Docker, WPF, EF Core  }\\
-Other &  \normalsize{ OOP, FP, REST API, Testing, Design patterns }\\
+Languages &  \normalsize{C\#, .NET, Python, C  }\\
+Technologies &  \normalsize{HTML, CSS, ASP.NET Core, SQL Server, Git, SQLite, SQL, Docker, WPF, EF Core  }\\
+Other &  \normalsize{ OOP, SOLID, FP, REST API, Testing, Design Patterns }\\
 \end{tabularx}
 
 
@@ -173,38 +172,39 @@ Other &  \normalsize{ OOP, FP, REST API, Testing, Design patterns }\\
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{ Analysis tool for the data logger (2023)} | \emph{C\#} & \hfill \href{https://andude10.github.io/projects/Librotech Inspection}{Blog post} \\[3.75pt]
+\textbf{Tool for data logger analytics (July 2023)} | \emph{C\#} & \hfill \href{https://andude10.github.io/projects/Librotech Inspection}{Blog post} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Offline cross-platform solution to analyze records collected by the company's data logger.
-        \item[--] Faced poor graph performance with large amounts of data. Implemented the Douglas-Peucker algorithm, which reduced the number of points on the graph by 360\% without changing the graph view, resulting in a significant performance boost.
-        \item[--] Developed page caching system to reduce RAM usage. When the user navigates to another page, the previous page is saved in a .json file that will be created back if needed.
-        \item[--] To keep code clean and readable, I followed OOP, C\# code conventions and maintained documentation. Utilized MVVM architecture, Dependency Injection (DI), Fluent Interface Design and Singleton. Introduced logging using NLog to analyze bugs encountered by users. Introduced unit testing.
-        \item[--] Found the causes of poor application performance using dotTrace, performance profiler.
-        \item [--] Developed a minimalistic UI as per the user's request. Used asynchronous programming and the ReactiveUI library to make the interface responsive and smooth.
+        \item[--] Offline solution to analyze records captured by the company's data logger.
+        \item[--] Faced poor graph performance with large amounts of data. Implemented the Douglas-Peucker algorithm, which resulted in a significant speed boost by reducing points on the graph by 360\%.
+        \item[--] Maintained clean, documented code, compliant with OOP and SOLID principles. Applied MVVM architecture, dependency injection (DI), fluent interface design, and singleton.
+        \item[--] Developed page caching system to reduce RAM usage.
+        \item[--] Introduced unit testing and logging to identify bugs encountered by users.
+        \item [--] Developed a modern user interface in accordance with the specification. Established a smooth and responsive interface by using asynchronous programming and the ReactiveUI framework.
     \end{itemize}
     \end{minipage}
 }  \\
 \\
-\textbf{Client for music service (2022)} | \emph{C\#, API, TPL} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source code} \\[3.75pt]
+\textbf{Client for music service (March 2022)} | \emph{C\#, API, TPL} & \hfill \href{https://github.com/andude10/Avayandex-Music}{Source Code} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Cross-platform community client for popular online music service.
-        \item[--] Implemented authorization, downloading/playing tracks, track queue, home page, user data and more.
-        \item [--] Faced poor user experience due to slow app performance. It was because of large number of API requests in single thread. Introduced task parallel library (TPL), making interface much more responsive.
-        \item [--] Contributed to open-source C\# API library.
+        \item[--] Cross-platform community client for a popular online music service.
+        \item [--] Faced poor interface responsiveness because of the many API requests happening in a single thread. Introduced the task parallel library (TPL), which greatly improved the user experience.
+        \item[--] Implemented authorization, downloading/playing tracks, track queue, home page, library, and more.
+        \item [--] Contributed to the open-source C\# API library.
     \end{itemize}
     \end{minipage}
 }  \\
 \\
-\textbf{Online bookstore (2021)} | \emph{C\#, ASP.NET Core, SQL Server, Entity Framework} & \hfill \href{https://github.com/andude10/The-Tome/}{Source code} \\[3.75pt]
+\textbf{Online bookstore (December 2021)} | \emph{Web, ASP.NET Core, SQL Server, EF Core} & \hfill \href{https://github.com/andude10/The-Tome/}{Source Code} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item [--] Web application for a fictional bookstore with basic (CRUD) functionality.
-        \item [--] Stored data in SQL Server, made database queries using ORM (Entity Framework).
+        \item [--] Web application for a fictional bookstore with basic functionality.
+        \item [--] Implemented home page, product catalog and shopping cart, user profile, community forum and more.
+        \item [--] Stored data in SQL Server, created database queries using Entity Framework Core (ORM).
     \end{itemize}
     \end{minipage}
 }  \\
